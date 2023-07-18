@@ -5,7 +5,9 @@
 *
 * Return: Always 0 (Success)
 */
-int main(){
+
+int main()
+{
 	printf("0-putchar.c");
 	return 0;
 }
