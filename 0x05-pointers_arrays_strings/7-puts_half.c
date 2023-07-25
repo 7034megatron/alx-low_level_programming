@@ -5,7 +5,13 @@ void puts_half(char *str)
 	int i;
 	int start_index;
 	char *tmp = str;
-       	int length = _strlen(tmp);
+       	int length = 0;
+
+        while (*tmp != '\0')
+        {
+               tmp++;
+             length++;
+        }
 
     if (length % 2 == 0) {
         start_index = length / 2;
