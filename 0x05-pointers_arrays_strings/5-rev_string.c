@@ -1,21 +1,25 @@
 #include "main.h"
 
+void rev_string(char *s) {
+    
 
-void rev_string(char *s) 
-{
-	int count = 0;
-        while(*s != '\0')
-        {
-                s++;
-                count++;
-        }
+    int count = 0;
+    char *end = s;
 
-	char newS[count + 1];
-       	for ( int i = 0; i < count; i++)
-	{
-		s--;
-		news[i] = *s;
-	}	
-	newS[count] = '\0';
-	s = newS;
+   
+    while (*end != '\0') {
+        end++;
+        count++;
+    }
+    end;
+
+    char temp;
+    while (s < end) {
+        temp = *s;
+        *s = *end;
+        *end = temp;
+
+        s++;
+        end--;
+    }
 }
