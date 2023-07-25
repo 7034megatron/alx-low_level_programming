@@ -3,14 +3,14 @@
 void print_rev(char *s)
 {
 	int count = 0;
-	while(str* != '\0')
+	while(s* != '\0')
 	{
-		str++;
+		s++;
 		count++;
 	}
 	while(count != 0)
 	{
-		str--;
+		s--;
 		count--;
 		_puchar(count);
 	}
