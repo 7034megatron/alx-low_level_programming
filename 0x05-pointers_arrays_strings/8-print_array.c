@@ -7,9 +7,9 @@ void print_array(int *a, int n)
 	int i;
 	for (i = 0; i < n; i++)
 	{
-		printf(a[i]);
-		printf(',');
-		printf(' ');
+		printf("%d",a[i]);
+		printf("%c", ',');
+		_putchar(' ');
 	}	
 	_putchar('\n');
 }
