@@ -8,6 +8,7 @@ void print_rev(char *s)
 		s++;
 		count++;
 	}
+	s--;
 	while(count != 0)
 	{
 		s--;
