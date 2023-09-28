@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * This code converts binary digits to integers
+ * binary_to_uint - converts a binary value to unsigned integer
  * @b: This is the parametre for our prototype
- * return: printed digits
+ * Return: The converted value
  */
 
 unsigned int binary_to_uint(const char *b)
