@@ -1,15 +1,11 @@
 #include "main.h"
 
-/* Custom putchar function */
-int _putchar(char c)
-{
-    return write(1, &c, 1);
-}
-
 /**
- * print_binary - Prints the binary representation of a number.
- * @n: The number to print in binary.
+ * print_binary - Converts an integer into binary
+ * @n: number to print in binary
+ * Return: Print the binary representation of a number
  */
+
 void print_binary(unsigned long int n)
 {
     int bit, flag = 0;
@@ -32,4 +28,8 @@ void print_binary(unsigned long int n)
             _putchar('0');
         }
     }
+}
+int _putchar(char c)
+{
+    return write(1, &c, 1);
 }
